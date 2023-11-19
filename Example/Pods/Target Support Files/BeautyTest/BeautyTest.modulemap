@@ -1,0 +1,6 @@
+framework module BeautyTest {
+  umbrella header "BeautyTest-umbrella.h"
+
+  export *
+  module * { export * }
+}

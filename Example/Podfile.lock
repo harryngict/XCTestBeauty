@@ -1,0 +1,29 @@
+PODS:
+  - BeautyTest/SnapshotTest (0.0.1):
+    - iOSSnapshotTestCase (~> 8.0.0)
+  - BeautyTest/XCShortHand (0.0.1)
+  - iOSSnapshotTestCase (8.0.0):
+    - iOSSnapshotTestCase/SwiftSupport (= 8.0.0)
+  - iOSSnapshotTestCase/Core (8.0.0)
+  - iOSSnapshotTestCase/SwiftSupport (8.0.0):
+    - iOSSnapshotTestCase/Core
+
+DEPENDENCIES:
+  - BeautyTest/SnapshotTest (from `../`)
+  - BeautyTest/XCShortHand (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - iOSSnapshotTestCase
+
+EXTERNAL SOURCES:
+  BeautyTest:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  BeautyTest: e887a736039bf7466b8a4f5d9fb86c9731b1a5a5
+  iOSSnapshotTestCase: a670511f9ee3829c2b9c23e6e68f315fd7b6790f
+
+PODFILE CHECKSUM: 81c260fc5b6785887bf0f62b1b55619dc9c80617
+
+COCOAPODS: 1.10.2
