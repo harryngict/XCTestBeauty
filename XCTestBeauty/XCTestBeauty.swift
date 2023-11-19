@@ -1,6 +1,6 @@
 //
-//  XCShortHand.swift
-//  XCShortHand
+//  XCTestBeauty.swift
+//  XCTestBeauty
 //
 //  Created by Hoang Nguyen on 19/11/23.
 //
@@ -8,7 +8,7 @@
 import Foundation
 import XCTest
 
-public protocol XCShortHand: XCTestCase {
+public protocol XCTestBeauty: XCTestCase {
     /// Wrapper for XCTContext.runActivity(). Will append "GIVEN" as prefix for the description.
     /// - Parameters:
     ///   - description: Describe the operation happen in the block
@@ -42,7 +42,7 @@ public protocol XCShortHand: XCTestCase {
     func then<Result>(_ description: String, _ block: (XCTActivity) throws -> Result) rethrows -> Result
 }
 
-public extension XCShortHand {
+public extension XCTestBeauty {
     func given<Result>(_ description: String, _ block: () throws -> Result) rethrows -> Result {
         try XCTContext.runActivity(named: "GIVEN \(description)") { _ in
             try block()
