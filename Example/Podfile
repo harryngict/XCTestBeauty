@@ -1,5 +1,5 @@
 source 'https://cdn.cocoapods.org/'
-install! 'cocoapods', :generate_multiple_pod_projects => true, :warn_for_unused_master_specs_repo => false
+install! 'cocoapods', :warn_for_unused_master_specs_repo => false
 platform :ios, '12.0'
 
 use_frameworks!
@@ -8,6 +8,5 @@ target 'Example' do
 end
 
 target 'ExampleTests' do
-  pod 'BeautyTest/XCShortHand', :path => '../'
-  pod 'BeautyTest/SnapshotTest', :path => '../'
+  pod 'XCTestBeauty', :path => '../'
 end
